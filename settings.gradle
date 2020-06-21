@@ -1,0 +1,5 @@
+rootProject.name = 'nesoy-spring-boot-starter'
+include 'nesoy-spring-boot-autoconfigure'
+include 'nesoy-spring-boot-starter-example'
+include 'nesoy-spring-boot-starter-web'
+

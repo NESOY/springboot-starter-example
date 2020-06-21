@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "nesoy.log",
+      "type": "java.lang.String",
+      "description": "Support Prefix"
+    }
+  ]
+}
