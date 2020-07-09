@@ -35,11 +35,22 @@
 #### 2. Setting Auto-Configure Module 🐳
 - Springboot의 자동 설정을 사용하기 위해 아래의 의존성을 추가해줍니다.
     - [Springboot-AutoConfigure](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-autoconfigure)
+
 ```shell script
-compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure'
+# gradle
+compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.3.1.RELEASE'
+
+# Maven
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-autoconfigure</artifactId>
+    <version>2.3.1.RELEASE</version>
+</dependency>
 ```
 
 - Starter에 필요한 설정파일을 만들어봅시다.
+    - [@ConfigurationProperties](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/context/properties/ConfigurationProperties.html)
+    - [Reference](https://velog.io/@max9106/Spring-Boot-%EC%99%B8%EB%B6%80%EC%84%A4%EC%A0%95-4xk69h8o50)
 ```java
 @ConfigurationProperties(prefix = "nesoy")
 public class NesoyProperties {
@@ -65,3 +76,4 @@ public class NesoyProperties {
 - <https://forward.nhn.com/2019/seoul/hands-on-labs/java.spring-boot-custom-starter/index.html>
 - <https://supawer0728.github.io/2018/03/15/create-spring-boot-starter/>
 - <http://blog.kingbbode.com/posts/spring-conditional>
+- <https://cheese10yun.github.io/immutable-properties/
